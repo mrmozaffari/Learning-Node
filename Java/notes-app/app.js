@@ -3,6 +3,6 @@ fs.writeFileSync('notes.txt','Hello Im in the file')
 try{
   fs.appendFileSync('notes.txt','This is the 2nd')
   console.log('File appended')
-} catc (err) {
+} catch (err) {
   console.log('Error')
 }
