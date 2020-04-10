@@ -7,6 +7,6 @@ try{
     console.log('Error')
 }
 
-const firstname = require('./utils.js')
+const add = require('./utils.js')
 console.log('app.js is running')
-console.log(firstname)
+console.log(add(10,20))
