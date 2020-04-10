@@ -8,6 +8,6 @@ try{
 }
 
 const add = require('./utils.js')
-const sum = add(10,20)
+sum = add(10,20)
 console.log('app.js is running')
 console.log(sum)
