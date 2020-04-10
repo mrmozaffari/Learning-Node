@@ -4,5 +4,5 @@ try{
   fs.appendFileSync('notes.txt','This is the 2nd')
   console.log('File appended')
 } catch (err) {
-  console.log('Error')
+    console.log('Error')
 }
