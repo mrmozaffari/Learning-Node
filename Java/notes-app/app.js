@@ -1,4 +1,5 @@
-const getnote = require('./notes.js');
+const validator = require('validator')
+const getnote = require('./notes.js')
 const fs = require('fs')
 fs.writeFileSync('notes.txt','Hello Im in the file')
 try{
