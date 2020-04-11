@@ -5,5 +5,9 @@ const book = {
 // Print object from json
 console.log(book.title)
 // Convert JSON to String
-const bookJson = JSON.stringify(book)
+const bookJsonString = JSON.stringify(book)
+console.log(bookJsonString)
+
+//Convert string to json
+const bookJson = JSON.parse(bookJsonString)
 console.log(bookJson)
