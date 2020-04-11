@@ -3,6 +3,7 @@ const book = {
   'author': 'Ryan Holiday'
 }
 // Print object from json
+console.log(book)
 console.log(book.title)
 // Convert JSON to String
 const bookJsonString = JSON.stringify(book)
