@@ -32,7 +32,8 @@ yargs.command({
   builder: {
     title: {
       describe: 'Adding Title',
-      demandOption: true
+      demandOption: true,
+      type: 'string'
     }
   },
   handler: function(argv) {
