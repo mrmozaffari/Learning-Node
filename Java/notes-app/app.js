@@ -1,5 +1,5 @@
-//const validator = require('validator')
-import validator from 'validator'
+const validator = require('validator')
+//import validator from 'validator'
 const getnote = require('./notes.js')
 const fs = require('fs')
 fs.writeFileSync('notes.txt','Hello Im in the file')
