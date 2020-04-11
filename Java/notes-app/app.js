@@ -40,4 +40,4 @@ yargs.command({
     console.log('add executed', argv)
   }
 })
-console.log(yargs.argv)
+//console.log(yargs.argv)
