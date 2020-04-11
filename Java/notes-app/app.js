@@ -1,5 +1,6 @@
 const validator = require('validator')
 const chalk = require('chalk')
+const yargs = require('yargs')
 //import validator from 'validator'
 const getnote = require('./notes.js')
 const fs = require('fs')
@@ -24,5 +25,4 @@ console.log(chalk.keyword('orange')('Some orange text'))
 console.log(chalk.bgHex('#DEADED').underline('Hello, world!'))
 console.log(chalk.bgKeyword('orange')('Some orange text'))
 console.log(chalk.bgRgb(15, 100, 204).inverse('Hello!'))
-console.log(process.argv)
-console.log(process.argv[2])
+console.log(yargs.argv)
