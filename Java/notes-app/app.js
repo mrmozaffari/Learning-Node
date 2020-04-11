@@ -1,4 +1,5 @@
 const validator = require('validator')
+const chalk = require('chalk')
 //import validator from 'validator'
 const getnote = require('./notes.js')
 const fs = require('fs')
@@ -17,3 +18,4 @@ console.log(sum)
 console.log(getnote())
 console.log(validator.isEmail('arbab@hpe.com'))
 console.log(validator.isIPRange('1.1.1.0/24'))
+console.log(chalk.hex('#DEADED').underline('Hello, world!')))
