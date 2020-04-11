@@ -28,6 +28,9 @@ console.log(chalk.bgRgb(15, 100, 204).inverse('Hello!'))
 yargs.version("1.1.0")
 yargs.command({
   command: 'add',
-  describe: 'Adding entry to the list'
+  describe: 'Adding entry to the list',
+  handler: function() {
+    console.log('add executed')
+  }
 })
 console.log(yargs.argv)
