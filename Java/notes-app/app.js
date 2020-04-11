@@ -29,6 +29,11 @@ yargs.version("1.1.0")
 yargs.command({
   command: 'add',
   describe: 'Adding entry to the list',
+  builder: {
+    title: {
+      describe: 'Adding Title'
+    }
+  }
   handler: function() {
     console.log('add executed')
   }
