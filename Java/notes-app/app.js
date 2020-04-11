@@ -33,7 +33,7 @@ yargs.command({
     title: {
       describe: 'Adding Title'
     }
-  }
+  },
   handler: function() {
     console.log('add executed')
   }
