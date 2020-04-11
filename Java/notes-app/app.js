@@ -31,7 +31,8 @@ yargs.command({
   describe: 'Adding entry to the list',
   builder: {
     title: {
-      describe: 'Adding Title'
+      describe: 'Adding Title',
+      demandOption: true
     }
   },
   handler: function(argv) {
