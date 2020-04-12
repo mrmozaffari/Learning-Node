@@ -1,6 +1,6 @@
 const book = {
-  'title':'Ego is the Enemy',
-  'author': 'Ryan Holiday'
+  'title':'bahman',
+  'body': 'male'
 }
 console.log('type of book is ', typeof book)
 console.log('book is ',  book)
