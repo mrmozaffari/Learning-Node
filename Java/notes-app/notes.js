@@ -35,6 +35,7 @@ const loadNotes = function() {
     const dataJSONstring = dataBuffer.toString()
     console.log('This is the string ', dataJSONstring)
     const datajson = JSON.parse(dataJSONstring)
+    console.log('data in json is: ',datajson)
     console.log('bbbbbbbb ',datajson.title)
     return dataJson
   } catch (e) {
