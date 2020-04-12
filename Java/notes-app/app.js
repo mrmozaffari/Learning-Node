@@ -41,7 +41,7 @@ yargs.command({
     }
   },
   handler: function(argv) {
-    console.log('add executed '+ argv.title + argv.body)
+    console.log('add executed '+ argv.title +' and the body is: ' + argv.body)
   }
 })
 
