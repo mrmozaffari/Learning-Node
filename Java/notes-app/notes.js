@@ -1,25 +1,25 @@
 const fs = require('fs')
+
 const getNotes = function() {
   return "These are my notes"
 }
 
 const addNotes = function(title, body) {
   const notes = loadNotes()
-
-  const duplicateNotes = notes.filter(function(note){
+  const duplicateNotes = notes.filter(function(note) {
     console.log(notes.title === title)
-    return notes.title === title
+    return note.title === title
   })
 
-console.log('array length: ',duplicateNotes.length)
-  if(duplicateNotes.length===0){
+  console.log('array length: ', duplicateNotes.length)
+  if (duplicateNotes.length === 0) {
     notes.push({
       title: title,
       body: body
     })
     saveNotes(notes)
-  }else {
-    console.log('This is duplicate title: '+title)
+  } else {
+    console.log('This is duplicate title: ' + title)
   }
 }
 
@@ -38,10 +38,10 @@ const loadNotes = function() {
   }
 }
 //
-const saveNotes = function(notes){
+const saveNotes = function(notes) {
   const dataToSave = JSON.stringify(notes)
   const testparse = JSON.parse(dataToSave)
-  fs.writeFileSync('notes.json',dataToSave)
+  fs.writeFileSync('notes.json', dataToSave)
 
 }
 
