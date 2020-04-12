@@ -23,7 +23,7 @@ const addNotes = function(title, body) {
       body: body
     })
     console.log('Here the Notes: ', notes)
-    //saveNotes(notes)
+    saveNotes(notes)
   }else {
     console.log('This is duplicate title: '+title)
   }
@@ -47,7 +47,7 @@ const loadNotes = function() {
 const saveNotes = function(notes){
   const dataToSave = JSON.stringify(notes)
   console.log('this is data after stringfy: ', dataToSave)
-  fs.writeFileSync('notes.json',dataToSave)
+  //fs.writeFileSync('notes.json',dataToSave)
 
 }
 
