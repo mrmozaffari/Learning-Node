@@ -1,3 +1,5 @@
+const fs = require('fs')
+
 const book = {
   'title':'bahman',
   'body': 'male'
