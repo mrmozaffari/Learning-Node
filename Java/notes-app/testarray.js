@@ -26,8 +26,13 @@ console.log('type of bookJson is ', typeof bookJson)
 console.log('bookJson is ', bookJson)
 console.log('bookJson title is ', bookJson.title)
 
+//Read data from  file
 const filedatabuffer = fs.readFileSync('testarray.json')
+
+//Convert data to string
 const stringdata = filedatabuffer.toString()
+
+//Convert string to JSON
 const jsondata = JSON.parse(stringdata)
 
 console.log('jsondata  is ', jsondata)
