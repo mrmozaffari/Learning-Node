@@ -23,7 +23,7 @@ const addNotes = function(title, body) {
       body: body
     })
     console.log(notes)
-    saveNotes(notes)
+    //saveNotes(notes)
   }else {
     console.log('This is duplicate title: '+title)
   }
