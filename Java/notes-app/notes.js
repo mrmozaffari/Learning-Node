@@ -10,7 +10,7 @@ const addNotes = function(title, body) {
     return notes.title === title
   })
 
-
+console.log('array length: ',duplicateNotes.length)
   if(duplicateNotes.length===0){
     notes.push({
       title: title,
