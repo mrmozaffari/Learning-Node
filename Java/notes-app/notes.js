@@ -24,14 +24,14 @@ console.log('array length: ',duplicateNotes.length)
 
 const loadNotes = function() {
   try {
+    //const dataBuffer = fs.readFileSync('notes.json')
+    //const dataJSON = dataBuffer.toString()
+    //const fff = JSON.parse(dataJSON)
+    //return fff
     const dataBuffer = fs.readFileSync('notes.json')
     const dataJSON = dataBuffer.toString()
-    const fff = JSON.parse(dataJSON)
-    return fff
-  //  const dataBuffer = fs.readFileSync('notes.json')
-  //  const dataJSONstring = dataBuffer.toString()
-//    const datajson = JSON.parse(dataJSONstring)
-  //  return dataJson
+    const outjson = JSON.parse(dataJSON)
+    return outjson
   } catch (e) {
     return []
   }
