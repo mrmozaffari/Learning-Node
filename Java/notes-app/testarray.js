@@ -4,9 +4,9 @@ const book = {
 }
 
 console.log('type of book is ', typeof book)
-console.log('type of book is ', typeof book.title)
+console.log('type of book.title is ', typeof book.title)
 
 // Convert JSON to String
 const bookJsonString = JSON.stringify(book)
 
-console.log('type of book is ', typeof bookJsonString)
+console.log('type of bookJsonString is ', typeof bookJsonString)
