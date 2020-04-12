@@ -5,6 +5,7 @@ const getNotes = function() {
 
 const addNotes = function(title, body) {
   const notes = loadNotes()
+  console.log('titlessssssss ',notes.title)
   console.log('aaaaaaaaa ',notes.title)
 
   const duplicateNotes = notes.filter(function(note){
