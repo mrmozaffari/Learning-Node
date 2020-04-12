@@ -17,7 +17,7 @@ const addNotes = function(title, body) {
 
 
   if(duplicateNotes.length===0){
-    console.log(notes)
+    console.log('We are pushing:', notes)
     notes.push({
       title: title,
       body: body
