@@ -48,7 +48,7 @@ const saveNotes = function(notes){
   const dataToSave = JSON.stringify(notes)
   console.log('this is data after stringfy: ', dataToSave)
   const testparse = JSON.parse(dataToSave)
-  console.log('after parse: ',testparse)
+  console.log('after parse: ',testparse.title)
   //fs.writeFileSync('notes.json',dataToSave)
 
 }
