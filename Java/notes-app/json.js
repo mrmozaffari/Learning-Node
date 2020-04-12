@@ -6,6 +6,7 @@ const book = {
 // Print object from json
 console.log(book)
 console.log(book.title)
+
 // Convert JSON to String
 const bookJsonString = JSON.stringify(book)
 console.log(bookJsonString)
@@ -20,6 +21,7 @@ const databuffer = fs.readFileSync('myjson.json')
 console.log(databuffer)
 console.log('These bit will turn into human readable data with databuffer.toString')
 console.log(databuffer.toString())
-//conver databuffer string to JSON
+
+//convert databuffer string to JSON
 const convertedToJson = JSON.parse(databuffer.toString())
 console.log(convertedToJson)
