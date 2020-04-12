@@ -7,6 +7,7 @@ const addNotes = function(title, body) {
   const notes = loadNotes()
 
   const duplicateNotes = notes.filter(function(note){
+    console.log(notes.title === title)
     return notes.title === title
   })
   console.log('duplicate value: '+duplicateNotes)
