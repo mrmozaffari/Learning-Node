@@ -20,6 +20,6 @@ const databuffer = fs.readFileSync('myjson.json')
 console.log(databuffer)
 console.log('These bit will turn into human readable data with databuffer.toString')
 console.log(databuffer.toString())
-//conver databuffer string ti JSON
+//conver databuffer string to JSON
 const convertedToJson = JSON.parse(databuffer.toString())
 console.log(convertedToJson)
