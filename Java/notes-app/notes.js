@@ -6,6 +6,11 @@ const getNotes = function() {
 const addNotes = function(title, body) {
   const notes = loadNotes()
   console.log(notes)
+  notes.push({
+    title: title,
+    body: body
+  })
+  console.log(notes)
 
 }
 
