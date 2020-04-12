@@ -25,3 +25,4 @@ console.log(databuffer.toString())
 //convert databuffer string to JSON
 const convertedToJson = JSON.parse(databuffer.toString())
 console.log(convertedToJson)
+console.log('title is: ',convertedToJson.title)
