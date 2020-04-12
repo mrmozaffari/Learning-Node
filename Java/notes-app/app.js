@@ -2,7 +2,7 @@ const validator = require('validator')
 const chalk = require('chalk')
 const yargs = require('yargs')
 //import validator from 'validator'
-const notes = require('./notes2.js')
+const notes = require('./notes.js')
 const fs = require('fs')
 fs.writeFileSync('notes.txt','Hello Im in the file')
 try{
