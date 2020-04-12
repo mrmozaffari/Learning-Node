@@ -50,7 +50,7 @@ const saveNotes = function(notes){
   console.log('this is data after stringfy: ', dataToSave)
   const testparse = JSON.parse(dataToSave)
   console.log('after parse: ',testparse.title)
-  //fs.writeFileSync('notes.json',dataToSave)
+  fs.writeFileSync('notes.json',dataToSave)
 
 }
 
