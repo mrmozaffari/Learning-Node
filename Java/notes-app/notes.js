@@ -6,7 +6,9 @@ const addNotes = function(title, body){
 
 }
 
-module.exports= {
-  getNotes: getNotes,
-  addNotes: addNotes
-}
+module.exports = getNotes
+
+//module.exports= {
+//  getNotes: getNotes,
+//  addNotes: addNotes
+//}
