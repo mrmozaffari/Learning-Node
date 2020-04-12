@@ -15,3 +15,6 @@ fs.writeFileSync('myjson.json',bookJsonString) //save json string to file
 //Convert string to json
 const bookJson = JSON.parse(bookJsonString)
 console.log(bookJson)
+
+const databuffer = fs.readFileSync('myjson.json')
+console.log(databuffer)
