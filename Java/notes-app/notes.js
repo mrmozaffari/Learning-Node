@@ -40,7 +40,7 @@ const loadNotes = function() {
     return []
   }
 }
-
+//
 const saveNotes = function(notes){
   const dataToSave = JSON.stringify(notes)
   fs.writeFileSync('notes.json',dataToSave)
