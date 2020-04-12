@@ -16,7 +16,7 @@ console.log('bookString is ', bookString)
 
 // Save to file
 
-fs.writeFileSync('testarray.json', bookString)
+//fs.writeFileSync('testarray.json', bookString)
 
 
 // Convert String to json
@@ -25,3 +25,10 @@ const bookJson = JSON.parse(bookString)
 console.log('type of bookJson is ', typeof bookJson)
 console.log('bookJson is ', bookJson)
 console.log('bookJson title is ', bookJson.title)
+
+const filedatabuffer = fs.readFileSync('testarray.json')
+const stringdata = filedatabuffer.toString()
+const jsondata = JSON.parse(stringdata)
+
+console.log('jsondata  is ', jsondata)
+console.log('jsondata title is ', jsondata.title)
