@@ -33,7 +33,7 @@ const loadNotes = function() {
   try {
     const dataBuffer = fs.readFileSync('notes.json')
     const dataJSONstring = dataBuffer.toString()
-    console.log(dataJSONstring)
+    console.log('This is the string ', dataJSONstring)
     const dataJson = JSON.parse(dataJSONstring)
     console.log('bbbbbbbb ',dataJson.title)
     return dataJson
