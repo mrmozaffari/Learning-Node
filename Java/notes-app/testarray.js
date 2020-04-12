@@ -11,3 +11,4 @@ const bookJsonString = JSON.stringify(book)
 
 console.log('type of bookJsonString is ', typeof bookJsonString)
 console.log('bookJsonString is ', bookJsonString)
+console.log('bookJsonString is ', bookJsonString.title)
