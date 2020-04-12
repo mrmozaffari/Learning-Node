@@ -32,8 +32,10 @@ const addNotes = function(title, body) {
 const loadNotes = function() {
   try {
     const dataBuffer = fs.readFileSync('notes.json')
-    const dataJSON = dataBuffer.toString()
-    return JSON.parse(dataJSON)
+    const dataJSONstring = dataBuffer.toString()
+    const dataJson = JSON.parse(dataJSONstring)
+    console.log('bbbbbbbb ',dataJson)
+    return dataJson
   } catch (e) {
     return []
   }
