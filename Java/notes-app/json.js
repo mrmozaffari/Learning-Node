@@ -18,3 +18,5 @@ console.log(bookJson)
 
 const databuffer = fs.readFileSync('myjson.json')
 console.log(databuffer)
+console.log('These bit will turn into human readable data with databuffer.toString')
+console.log(databuffer.toString())
