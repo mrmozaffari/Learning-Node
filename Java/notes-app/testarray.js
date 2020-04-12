@@ -14,6 +14,11 @@ const bookString = JSON.stringify(book)
 console.log('type of bookString is ', typeof bookString)
 console.log('bookString is ', bookString)
 
+// Save to file
+
+fs.writeFileSync('testarray.json', bookString)
+
+
 // Convert String to json
 
 const bookJson = JSON.parse(bookString)
