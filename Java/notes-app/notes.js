@@ -11,6 +11,7 @@ const addNotes = function(title, body) {
     return notes.title === title
   })
   console.log('duplicate value: '+duplicateNotes)
+  console.log(duplicateNotes.length)
   console.log('***********')
 
 
