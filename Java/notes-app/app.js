@@ -42,7 +42,7 @@ yargs.command({
   },
   handler: function(argv) {
     console.log('add executed '+ argv.title +' and the body is: ' + argv.body)
-    notes.addNotes(argv.title, argv.body)
+    notes.addNote(argv.title, argv.body)
   }
 })
 

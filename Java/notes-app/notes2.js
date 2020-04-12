@@ -4,7 +4,7 @@ const getNotes = function () {
     return 'Your notes...'
 }
 
-const addNotes = function (title, body) {
+const addNote = function (title, body) {
     const notes = loadNotes()
     const duplicateNotes = notes.filter(function (note) {
         return note.title === title
@@ -39,5 +39,5 @@ const loadNotes = function () {
 
 module.exports = {
     getNotes: getNotes,
-    addNote: addNotes
+    addNote: addNote
 }
