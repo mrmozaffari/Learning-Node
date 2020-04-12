@@ -3,4 +3,4 @@ const book = {
   'author': 'Ryan Holiday'
 }
 
-console.log(type(book.title))
+console.log(typeof book.title)
