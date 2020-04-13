@@ -46,6 +46,28 @@ yargs.command({
   }
 })
 
+yargs.command({
+  command: 'del',
+  describe: 'deleting an entry from the list',
+  builder: {
+    title: {
+      describe: 'Title to Delete',
+      demandOption: false,
+      type: 'string'
+    }
+  /*  body: {
+      describe: 'Adding body',
+      demandOption: false,
+      type: 'string'
+    } */
+  },
+  handler: function(argv) {
+    console.log('remove executed '+ argv.title)
+  //  notes.addNotes(argv.title, argv.body)
+  }
+})
+
+
 
 //console.log(yargs.argv)
 yargs.parse()
