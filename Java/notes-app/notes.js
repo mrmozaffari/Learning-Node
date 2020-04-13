@@ -7,10 +7,9 @@ const getNotes = function() {
 const addNotes = function(title, body) {
   const notes = loadNotes()
   const duplicateNotes = notes.filter(function(note) {
-    console.log(note.title === title)
-    console.log(note)
     return note.title === title
   })
+
   console.log('array length: ', duplicateNotes.length)
   console.log('array is: ', duplicateNotes)
   if (duplicateNotes.length === 0) {
@@ -26,10 +25,11 @@ const addNotes = function(title, body) {
 
 const loadNotes = function() {
   try {
-    //const dataBuffer = fs.readFileSync('notes.json')
+    /* const dataBuffer = fs.readFileSync('notes.json')
     //const dataJSON = dataBuffer.toString()
     //const fff = JSON.parse(dataJSON)
-    //return fff
+    return fff
+    */
     const dataBuffer = fs.readFileSync('notes.json')
     const dataString = dataBuffer.toString()
     const DataJSON = JSON.parse(dataString)
