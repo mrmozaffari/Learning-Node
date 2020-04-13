@@ -26,3 +26,5 @@ yargs.command({
     //notes.addNotes(argv.title, argv.body)
   }
 })
+
+yargs.parse()
