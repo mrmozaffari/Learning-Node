@@ -4,6 +4,12 @@ const getNotes = function() {
   return "These are my notes"
 }
 
+const delNotes = function(title){
+  const notes = loadNotes()
+  console.log(notes)
+}
+
+
 const addNotes = function(title, body) {
   const notes = loadNotes()
   const duplicateNotes = notes.filter(function(note) {
