@@ -37,5 +37,10 @@ function addNotes(title){
     return item.id === title
   })
   console.log(object)
-  console.log(isDuplicate)
+  if(isDuplicate.length > 0){
+    console.log('We have a duplicate')
+    console.log('Duplicate is: ',isDuplicate)
+  }else{
+    console.log('No Duplicate')
+  }
 }
