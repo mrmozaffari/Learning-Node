@@ -10,7 +10,7 @@ const delNotes = function(title){
   const ifExist = notes.filter(function(note){
     return note.title === title
   })
-  if(ifExist == true){
+  if(ifExist === true){
     console.log('Hey we have a match in our data')
   }
 }
