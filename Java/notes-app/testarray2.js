@@ -34,5 +34,6 @@ function addNotes(title){
   const isDuplicate = object.filter(function(item){
     return item.title === title
   })
+  console.log(object)
   console.log(isDuplicate)
 }
