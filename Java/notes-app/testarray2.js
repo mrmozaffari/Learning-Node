@@ -17,7 +17,7 @@ yargs.command({
     },
     body: {
       describe: 'Adding body',
-      demandOption: true,
+      demandOption: false,
       type: 'string'
     }
   },
