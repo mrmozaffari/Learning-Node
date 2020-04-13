@@ -13,6 +13,7 @@ const delNotes = function(title){
 
   console.log(ifExist)
   if(ifExist.length > 0){
+    saveNotes(ifExist)
     console.log('Hey we have a match in our data')
   }
 }
