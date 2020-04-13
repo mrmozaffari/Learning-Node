@@ -11,7 +11,7 @@ const delNotes = function(title){
     return note.title === title
   })
   console.log(ifExist)
-  if(ifExist === title){
+  if(ifExist.length > 0){
     console.log('Hey we have a match in our data')
   }
 }
