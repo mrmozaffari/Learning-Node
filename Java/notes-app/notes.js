@@ -11,8 +11,8 @@ const addNotes = function(title, body) {
     console.log(note)
     return note.title === title
   })
-
   console.log('array length: ', duplicateNotes.length)
+  console.log('array is: ', duplicateNotes)
   if (duplicateNotes.length === 0) {
     notes.push({
       title: title,
