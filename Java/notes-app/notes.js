@@ -6,7 +6,7 @@ const getNotes = function() {
 
 const delNotes = function(title){
   const notes = loadNotes()
-  if(ifExist == true){
+  if(ifExist.length == true){
     console.log('Hey we have a match in our data')
   }
   console.log(notes)
