@@ -5,6 +5,13 @@ const yargs = require('yargs')
 //var string = JSON.stringify(data)
 //var object = JSON.parse(string)
 
+function addnotes(title){
+  console.log('this is what we got from argv: ', title)
+}
+
+
+
+
 
 yargs.command({
   command: 'add',
@@ -28,7 +35,3 @@ yargs.command({
 })
 
 yargs.parse()
-
-function addnotes(title){
-  console.log('this is what we got from argv: ', title)
-}
