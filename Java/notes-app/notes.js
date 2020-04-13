@@ -6,13 +6,13 @@ const getNotes = function() {
 
 const delNotes = function(title){
   const notes = loadNotes()
-  if(ifExist.length == true){
-    console.log('Hey we have a match in our data')
-  }
   console.log(notes)
   const ifExist = notes.filter(function(note){
     return note.title === title
   })
+  if(ifExist == true){
+    console.log('Hey we have a match in our data')
+  }
 }
 
 
