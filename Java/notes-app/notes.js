@@ -56,5 +56,6 @@ const saveNotes = function(notes) {
 
 module.exports = {
   getNotes: getNotes,
-  addNotes: addNotes
+  addNotes: addNotes,
+  delNotes: delNotes
 }
