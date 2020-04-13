@@ -22,9 +22,13 @@ yargs.command({
     }
   },
   handler: function(argv) {
-    console.log('add executed '+ argv.title)
-    //notes.addNotes(argv.title, argv.body)
+    console.log('add executed with title '+ argv.title)
+    addNotes(argv.title)
   }
 })
 
 yargs.parse()
+
+function addnotes(title){
+  console.log('this is what we got from argv: ', title)
+}
