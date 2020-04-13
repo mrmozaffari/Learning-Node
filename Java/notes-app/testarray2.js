@@ -1,7 +1,7 @@
 const yargs = require('yargs')
 //To convert object to string
 
-var data = [{id: 1, name:'personsName'}, {id: 2, name:'personsName2'}]
+var data = [{id: 'bahman', name:'personsName'}, {id: 'bahman2', name:'personsName2'}]
 var string = JSON.stringify(data)
 var object = JSON.parse(string)
 
