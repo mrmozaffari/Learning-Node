@@ -31,4 +31,8 @@ yargs.parse()
 
 function addNotes(title){
   console.log('this is what we got from argv: ', title)
+  const isDuplicate = object.filter(function(item){
+    return item.title === title
+  })
+  console.log(isDuplicate)
 }
