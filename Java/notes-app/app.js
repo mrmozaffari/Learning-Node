@@ -63,7 +63,7 @@ yargs.command({
   },
   handler: function(argv) {
     console.log('remove executed '+ argv.title)
-    notes.delNotes(argv.title)
+    //notes.delNotes(argv.title)
   }
 })
 
