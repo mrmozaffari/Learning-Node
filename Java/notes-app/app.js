@@ -52,7 +52,7 @@ yargs.command({
   builder: {
     title: {
       describe: 'Title to Delete',
-      demandOption: false,
+      demandOption: true,
       type: 'string'
     }
   /*  body: {
@@ -63,7 +63,7 @@ yargs.command({
   },
   handler: function(argv) {
     console.log('remove executed '+ argv.title)
-  //  notes.addNotes(argv.title, argv.body)
+    notes.delNotes(argv.title)
   }
 })
 
