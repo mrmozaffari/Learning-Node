@@ -8,8 +8,9 @@ const delNotes = function(title){
   const notes = loadNotes()
   console.log(notes)
   const ifExist = notes.filter(function(note){
-    return note.title === title
+    return note.title !== title
   })
+
   console.log(ifExist)
   if(ifExist.length > 0){
     console.log('Hey we have a match in our data')
