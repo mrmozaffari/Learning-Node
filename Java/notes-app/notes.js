@@ -41,7 +41,6 @@ const loadNotes = function() {
 //
 const saveNotes = function(notes) {
   const dataToSave = JSON.stringify(notes)
-  const testparse = JSON.parse(dataToSave)
   fs.writeFileSync('notes.json', dataToSave)
 
 }
