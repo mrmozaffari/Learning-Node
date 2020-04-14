@@ -24,11 +24,18 @@ const event = {
 }
 */
 
+/*
 const event = {
   name: 'Birthday',
   GuestList: () => {
     console.log('Guest list for ' + event.name)
   }
+}
+*/
+
+const event = {
+  name: 'Birthday',
+  GuestList: () => console.log('Guest list for ' + this.name)
 }
 
 event.GuestList()
