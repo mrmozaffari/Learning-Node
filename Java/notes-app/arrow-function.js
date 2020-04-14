@@ -4,9 +4,13 @@ const square = function(x){
 }
 */
 
+
+/*
 const expo = (x) => {
   return x**3
 }
+*/
 
+const expo = (x) => x**3
 
 console.log(expo(4))
