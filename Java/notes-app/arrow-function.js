@@ -11,6 +11,15 @@ const expo = (x) => {
 }
 */
 
+/*
 const expo = (x) => x**3
+*/
 
-console.log(expo(4))
+const event = {
+  'name': 'Birthday',
+  'GuestList': function(){
+    console.log('Guest list for ' + this.name)
+  }
+}
+
+console.log(event)
