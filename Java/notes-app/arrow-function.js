@@ -16,8 +16,8 @@ const expo = (x) => x**3
 */
 
 const event = {
-  'name': 'Birthday',
-  'GuestList': function(){
+  name: 'Birthday',
+  GuestList: function(){
     console.log('Guest list for ' + this.name)
   }
 }
