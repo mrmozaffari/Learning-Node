@@ -22,4 +22,4 @@ const event = {
   }
 }
 
-console.log(event)
+event.GuestList()
