@@ -42,7 +42,7 @@ const event = {
 
 const event = {
   name: 'Birthday',
-  GuestList() => {
+  GuestList(){
     console.log('Guest list for ' + this.name)
   }
 }
