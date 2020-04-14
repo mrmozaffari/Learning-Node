@@ -40,11 +40,18 @@ const event = {
 }
 */
 
+//********* One of the best ways
+
 const event = {
   name: 'Birthday',
-  GuestList(){
+  guestList: ['bahmna','samira','pooria'],
+  PrintGuestList(){
     console.log('Guest list for ' + this.name)
+    this.guestList.forEach((guest) => {
+      console.log(guest)
+    });
+
   }
 }
 
-event.GuestList()
+event.PrintGuestList()
