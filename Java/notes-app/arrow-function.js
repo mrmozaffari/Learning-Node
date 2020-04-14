@@ -1,5 +1,12 @@
+/*
 const square = function(x){
   return x**2
 }
+*/
 
-console.log(square(4))
+const expo = (x) => {
+  return x**3
+}
+
+
+console.log(expo(4))
